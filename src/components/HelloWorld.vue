@@ -10,34 +10,46 @@ const count = ref(0)
 
 <template>
   <h1>{{ msg }}</h1>
+  <hr>
+  <hr>
 
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+  <div class="card">    
+    <hr>
+    <hr>
+    <h2>BIODATA PRIBADI</h2>
+    
+    <div class="biodata">
+      <p><strong>Nama Lengkap:</strong> Irsyadel Fikri</p>
+      <p><strong>Npm:</strong> 233510591</p>
+      <p><strong>Universitas:</strong> Universitas Islam Riau</p>
+      <p><strong>Program Studi:</strong> Teknik Informatika</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Teluk Kuantan, 26 Juni 2005</p>
+      <p><strong>Alamat:</strong> Jl. Rambah Raya, Kubang Raya, Riau</p>
+      <p><strong>Email:</strong> irsyadelf@gmail.com</p>
+      <p><strong>Telepon:</strong> 0823-8568-1353</p>
+    </div>
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
 <style scoped>
 .read-the-docs {
   color: #888;
+}
+
+.card {
+  text-align: center;
+}
+
+.biodata {
+  margin-top: 1em;
+  display: inline-block;
+  text-align: left;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #100f0f;
+}
+.biodata p {
+  margin: 6px 0;
 }
 </style>
